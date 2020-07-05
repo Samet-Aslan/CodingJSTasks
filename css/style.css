@@ -5,21 +5,39 @@ pre code {
     color: #666;
     page-break-inside: avoid;
     font-family: monospace;
-    font-size: 15px;
+    font-size: 18px;
     line-height: 1.6;
     margin-bottom: 1.6em;
     overflow: auto;
     padding: 1em 1.5em;
-    display: inline-block;
+    display: block;
     word-wrap: break-word;
 }
 
 pre{
-	-moz-tab-size: 1;
-    -o-tab-size:   1;
-    tab-size:      1;
+	-moz-tab-size: 2;
+    -o-tab-size:   2;
+    tab-size:      3;
 }
 
-section{
-	padding-left: 30px;
+.wrapper{
+	align-items: center;
+	float: left;
+}
+
+.wrapper section{
+	float: left;
+	width: 70%;
+}
+
+@media screen and (max-width: 900px)   {
+    .wrapper, .wrapper section{
+        width:100%;   
+        float:none;
+    }
+
+}
+
+p{
+	text-align: center;
 }

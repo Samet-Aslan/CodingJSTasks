@@ -12,17 +12,19 @@
 <body>
 
 	<header>
-			<h2>CodingJS Testing</h2>
+			<h2>CodingJS Exercises</h2>
 	</header>
 
+<section class="wrapper"> 
+
 	<section>
-			<h3>Warmup-1 -- sleepIn </h3>
+			<h3>1. Warmup-1 -- sleepIn </h3>
 			<h4>Solution: </h4>
 			<pre>
 				<code>
 					function sleepIn(weekday, vacation){
 						if(!weekday || vacation){
-						return true;
+								return true;
   						}
   						return false;
 					}
@@ -31,7 +33,7 @@
 	</section>
 
 	<section>
-			<h3>Warmup-1 -- monkeyTrouble </h3>
+			<h3>1.1 Warmup-1 -- monkeyTrouble </h3>
 			<h4>Solution: </h4>
 			<pre>
 				<code>
@@ -46,7 +48,7 @@
 	</section>
 
 	<section>
-			<h3>Warmup-1 -- sumDouble </h3>
+			<h3>1.2 Warmup-1 -- sumDouble </h3>
 			<h4>Solution: </h4>
 			<pre>
 				<code>
@@ -61,7 +63,7 @@
 	</section>
 
 	<section>
-			<h3>Warmup-1 -- diff21 </h3>
+			<h3>1.3 Warmup-1 -- diff21 </h3>
 			<h4>Solution: </h4>
 			<pre>
 				<code>
@@ -75,8 +77,255 @@
 			</pre>
 	</section>
 
+	<section>
+			<h3>1.4 Warmup-1 -- parrotTrouble </h3>
+			<h4>Solution: </h4>
+			<pre>
+				<code>
+					function parrotTrouble(talking, hour){
+  						if(talking && (hour < 7 || hour > 20){
+       						return true;
+  						}
+  						return false;
+					}
+				</code>
+			</pre>
+	</section>
+
+	<section>
+			<h3>1.5 Warmup-1 -- makes10 </h3>
+			<h4>Solution: </h4>
+			<pre>
+				<code>
+					function makes10(a, b){
+  						if(a == 10 || b == 10){
+      						return true;
+  						}
+  						else if(a + b == 10){
+    						return true;
+  						}
+  						return false;
+					}
+				</code>
+			</pre>
+	</section>
+
+	<section>
+			<h3>1.6 Warmup-1 -- nearHundred </h3>
+			<h4>Solution: </h4>
+			<pre>
+				<code>
+					function nearHundred(n){
+  						if(Math.abs(n-100) <= 10 || Math.abs(n-200) <= 10){
+    						return true;
+ 						}
+  						return false;
+					}
+				</code>
+			</pre>
+	</section>
+
+	<section>
+			<h3>1.7 Warmup-1 -- posNeg </h3>
+			<h4>Solution: </h4>
+			<pre>
+				<code>
+					function posNeg(a, b, negative){
+  						if(!negative && a < 0 && b > 0){
+    						return true;
+  						}
+  						else if(!negative && a > 0 && b < 0){
+    						return true;
+  						}
+  						else if(negative && a < 0 && b < 0 ){
+     						return true;
+  						}
+  						else{
+    						return false;
+  						}
+					}
+				</code>
+			</pre>
+	</section>
+
+	<section>
+			<h3>1.8 Warmup-1 -- notString </h3>
+			<h4>Solution: </h4>
+			<pre>
+				<code>
+					function notString(str){
+						if(str.substring(0,3) == "not"){
+    						return str;
+  						}
+  						else{
+   						return "not " + str;
+						}
+					}
+				</code>
+			</pre>
+	</section>
+
+	<section>
+			<h3>1.9 Warmup-1 -- frontBack </h3>
+			<h4>Solution: </h4>
+			<pre>
+				<code>
+					function frontBack(str){
+  						if(str.length > 1){
+    						return str.substring(str.length-1, str.length) + 
+    						str.substring(1, str.length-1) + str.substring(0,1);
+  						}
+  						return str;
+					}
+				</code>
+			</pre>
+	</section>
+
+	<section>
+			<h3>1.10 Warmup-1 -- front3 </h3>
+			<h4>Solution: </h4>
+			<pre>
+				<code>
+					function front3(str){
+  						if(str.length < 3){
+    						return str+str+str;
+  						}
+  						return str.substring(0,3) + str.substring(0,3) + str.substring(0,3);
+					}
+				</code>
+			</pre>
+	</section>
+
+	<section>
+			<h3>1.11 Warmup-1 -- backAround </h3>
+			<h4>Solution: </h4>
+			<pre>
+				<code>
+					function backAround(str){
+  						if(str.length < 2){
+    						return str + str + str;
+  						}
+ 						return str.substring(str.length-1, str.length) + str + str.substring(str.length-1, str.length);
+					}
+				</code>
+			</pre>
+	</section>
+
+	<section>
+			<h3>1.12 Warmup-1 -- or35 </h3>
+			<h4>Solution: </h4>
+			<pre>
+				<code>
+					function or35(n){
+  						if(n % 3 == 0 || n % 5 == 0){
+    						return true;
+  						}
+  						return false;
+					}
+				</code>
+			</pre>
+	</section>
+
+	<section>
+			<h3>1.13 Warmup-1 -- front22 </h3>
+			<h4>Solution: </h4>
+			<pre>
+				<code>
+					function front22(str){
+  						if(str.length < 3){
+    						return str + str + str;
+  						}
+  						return str.substring(0, 2) + str + str.substring(0,2);
+					}
+				</code>
+			</pre>
+	</section>
+
+	<section>
+			<h3>1.14 Warmup-1 -- startHi </h3>
+			<h4>Solution: </h4>
+			<pre>
+				<code>
+					function startHi(str){
+  						if(str.length < 2){
+    						return false;
+  						}
+  						else if(str.substring(0,2) == "hi"){
+   							return true;
+  						}
+ 						return false;
+					}
+				</code>
+			</pre>
+	</section>
+
+	<section>
+			<h3>1.15 Warmup-1 -- icyHot </h3>
+			<h4>Solution: </h4>
+			<pre>
+				<code>
+					function icyHot(temp1, temp2){
+  						if((temp1 < 0 && temp2 > 100) || (temp1 > 100 && temp2 < 0)){
+    						return true;
+  						}
+  						return false;
+					}
+				</code>
+			</pre>
+	</section>
+
+	<section>
+			<h3>1.16 Warmup-1 -- in1020 </h3>
+			<h4>Solution: </h4>
+			<pre>
+				<code>
+					function in1020(a, b){
+ 						if((a >= 10 && a <= 20) || (b >= 10 && b <= 20)){
+    						return true;
+  						}
+  						return false;
+					}
+				</code>
+			</pre>
+	</section>
+
+	<section>
+			<h3>1.17 Warmup-1 -- hasTeen </h3>
+			<h4>Solution: </h4>
+			<pre>
+				<code>
+					function hasTeen(a, b, c){
+  						if((a >= 13 && a <= 19) || (b >= 13 && b <= 19) || (c >= 13 && c <= 19)){
+   							return true;
+  						}
+  						return false;
+					}
+				</code>
+			</pre>
+	</section>
+
+	<section>
+			<h3>1.18 Warmup-1 -- loneTeen </h3>
+			<h4>Solution: </h4>
+			<pre>
+				<code>
+					function loneTeen(a, b){
+  						if(((a >= 13 && a <= 19) && (b >= 13 && b <= 19))){
+    						return false;
+  						}
+  						else if(((a >= 13 && a <= 19) || (b >= 13 && b <= 19))){
+    						return true;
+  						}
+  						return false;
+					}
+				</code>
+			</pre>
+	</section>
+
+</section>
+
 	<footer>
-		<p>2020 Samet Aslan</p>
+		<p>Made by <a href="https://www.samet-aslan.de/" target="_blank"/>Samet Aslan</a></p>
 	</footer>
 
 </body>
