@@ -322,6 +322,215 @@
 			</pre>
 	</section>
 
+	<section>
+			<h3>1.19 Warmup-1 -- delDel </h3>
+			<h4>Solution: </h4>
+			<pre>
+				<code>
+					function delDel(str){
+  						if(str.length < 4){
+    						return str;
+  						}
+ 						if(str.substring(1,4) == "del"){
+    						return str.substring(0,1) + str.substring(4,str.length);
+  						}
+  						return str;
+					}
+				</code>
+			</pre>
+	</section>
+
+	<section>
+			<h3>1.20 Warmup-1 -- mixStart </h3>
+			<h4>Solution: </h4>
+			<pre>
+				<code>
+					function mixStart(str){
+ 						if(str.length < 3){
+    						return false;
+  						}
+  						if(str.substring(1,3) == "ix"){
+     						return true;
+  						}
+  						return false;
+					}
+				</code>
+			</pre>
+	</section>
+
+	<section>
+			<h3>1.21 Warmup-1 -- startOz </h3>
+			<h4>Solution: </h4>
+			<pre>
+				<code>
+					function startOz(str){
+  						if(str.length < 2){
+    						return str;
+  						}
+  						if(str.substring(0,1) == "o" && str.substring(1,2) == "z"){
+    						return "oz";
+  						}
+  						else if(str.substring(0,1) == "o" &&  str.substring(1,2) != "z"){
+    						return "o";
+  						}
+ 						else if(str.substring(0,1) != "o" &&  str.substring(1,2) == "z"){
+    						return "z";
+  						}
+  						return "";
+					}
+				</code>
+			</pre>
+	</section>
+
+	<section>
+			<h3>1.22 Warmup-1 -- intMax </h3>
+			<h4>Solution: </h4>
+			<pre>
+				<code>
+					function intMax(a, b, c){
+  						if(a > b && a > c){
+    						return a;
+  						}
+  						else if(b > a && b > c){
+   							return b;
+  						}
+  						else{
+   							return c;
+  						}
+					}
+				</code>
+			</pre>
+	</section>
+
+	<section>
+			<h3>1.23 Warmup-1 -- close10 </h3>
+			<h4>Solution: </h4>
+			<pre>
+				<code>
+					function close10(a, b){
+  						if(Math.abs(a-10) < Math.abs(b-10)){
+    						return a;
+  						}
+  						else if(Math.abs(a-10) == Math.abs(b-10)){
+    						return 0;
+  						}
+  						return b;
+					}
+				</code>
+			</pre>
+	</section>
+
+	<section>
+			<h3>1.24 Warmup-1 -- in3050 </h3>
+			<h4>Solution: </h4>
+			<pre>
+				<code>
+					function in3050(a, b){
+  						if(((a >= 30 && a <= 40) && (b >= 30 && b <= 40)) && (Math.abs(a-b) <= 10)){
+    						return true;
+ 						}
+  						else if(((a >= 40 && a <= 50) && (b >= 40 && b <= 50)) && (Math.abs(a-b) <= 10)){
+    						return true;
+  						}
+  						return false;
+					}
+				</code>
+			</pre>
+	</section>
+
+	<section>
+			<h3>1.25 Warmup-1 -- max1020 </h3>
+			<h4>Solution: </h4>
+			<pre>
+				<code>
+					function max1020(a, b){
+  						if((a >= 10 && a <= 20) && (b < 10 || b > 20)){
+    						return a;
+  						}
+  						else if((b >= 10 && b <= 20) && (a < 10 || a > 20)){
+    						return b;
+  						}
+  						else if((b >= 10 && b <= 20) && (a >= 10 || a <= 20)){
+    						return Math.max(a,b);
+  						}
+  						return 0;
+					}
+				</code>
+			</pre>
+	</section>
+
+	<section>
+			<h3>1.26 Warmup-1 -- stringE</h3>
+			<h4>Solution: </h4>
+			<pre>
+				<code>
+					function stringE(str){
+  						var i = 0;
+  						var counter = 0;
+ 						for(i; i < str.length; i++){
+    						if(str.charAt(i) == "e"){
+      							counter++;
+    						}
+  						}
+  						if(counter < 4 && counter != 0){
+    						return true;
+  						}
+  						return false;
+					}
+				</code>
+			</pre>
+	</section>
+
+	<section>
+			<h3>1.27 Warmup-1 -- lastDigit</h3>
+			<h4>Solution: </h4>
+			<pre>
+				<code>
+					function lastDigit(a, b){
+   						return(a % 10 == b % 10);
+					}
+				</code>
+			</pre>
+	</section>
+
+	<section>
+			<h3>1.28 Warmup-1 -- endUp</h3>
+			<h4>Solution: </h4>
+			<pre>
+				<code>
+					function endUp(str){
+  						if(str.length < 3){
+    						return str.toUpperCase();
+  						}
+  						return str.substring(0, str.length-3) + str.substring(str.length-3, str.length).toUpperCase();
+  					}
+				</code>
+			</pre>
+	</section>
+
+	<section>
+			<h3>1.29 Warmup-1 -- everyNth</h3>
+			<h4>Solution: </h4>
+			<pre>
+				<code>
+					function everyNth(str, n){
+ 						var i = 1;
+  						var newstring = str.charAt(0);
+  						for(i; i < str.length; i++){
+    						if(i % n == 0){
+      							newstring = newstring + str.charAt(i);
+    						}
+  						}
+  						return newstring;
+  					}
+				</code>
+			</pre>
+	</section>
+
+
+
+
+
 </section>
 
 	<footer>

@@ -170,7 +170,136 @@ function loneTeen(a, b){
   return false;
 }
 
+//Warmup-1 -- delDel
+function delDel(str){
+  if(str.length < 4){
+    return str;
+  }
+  if(str.substring(1,4) == "del"){
+    return str.substring(0,1) + str.substring(4,str.length);
+  }
+  return str;
+}
 
+//Warmup-1 -- mixStart
+function mixStart(str){
+  if(str.length < 3){
+    return false;
+  }
+  if(str.substring(1,3) == "ix"){
+     return true;
+  }
+  return false:
+}
+
+//Warmup-1 -- startOz
+function startOz(str){
+  if(str.length < 2){
+    return str;
+  }
+  if(str.substring(0,1) == "o" && str.substring(1,2) == "z"){
+    return "oz";
+  }
+  else if(str.substring(0,1) == "o" &&  str.substring(1,2) != "z"){
+    return "o";
+  }
+  else if(str.substring(0,1) != "o" &&  str.substring(1,2) == "z"){
+    return "z";
+  }
+  return ""; 
+}
+
+//Warmup-1 -- intMax
+function intMax(a, b, c){
+  if(a > b && a > c){
+    return a;
+  }
+  else if(b > a && b > c){
+    return b;
+  }
+  else{
+    return c;
+  }
+}
+
+//Warmup-1 -- close10
+function close10(a, b){
+  if(Math.abs(a-10) < Math.abs(b-10)){
+    return a;
+  }
+  else if(Math.abs(a-10) == Math.abs(b-10)){
+    return 0;
+  }
+  
+  return b;
+}
+
+//Warmup-1 -- int3050
+function in3050(a, b){
+  if(((a >= 30 && a <= 40) && (b >= 30 && b <= 40)) && (Math.abs(a-b) <= 10)){
+    return true;
+  }
+  else if(((a >= 40 && a <= 50) && (b >= 40 && b <= 50)) && (Math.abs(a-b) <= 10)){
+    return true;
+  }
+  return false;
+}
+
+//Warmup-1 -- max1020
+function max1020(a, b){
+  if((a >= 10 && a <= 20) && (b < 10 || b > 20)){
+    return a;
+  }
+  else if((b >= 10 && b <= 20) && (a < 10 || a > 20)){
+    return b;
+  }
+  else if((b >= 10 && b <= 20) && (a >= 10 || a <= 20)){
+    return Math.max(a,b);
+  }
+  return 0;
+}
+
+//Warmup-1 -- stringE
+function stringE(str){
+  
+  var i = 0;
+  var counter = 0;
+  for(i; i < str.length; i++){
+    if(str.charAt(i) == "e"){
+      counter++;
+    }
+  }
+  if(counter < 4 && counter != 0){
+    return true;
+  }
+  return false;
+}
+
+//Warmup-1 -- lastDigit
+function lastDigit(a, b){
+   return(a % 10 == b % 10);
+}
+
+//Warmup-1 -- endUp
+function endUp(str){
+  if(str.length < 3){
+    return str.toUpperCase();
+  }
+  return str.substring(0, str.length-3) + str.substring(str.length-3, str.length).toUpperCase();
+  
+}
+
+//Warmup-1 -- everyNth
+function everyNth(str, n){
+  var i = 1;
+  var newstring = str.charAt(0);
+  for(i; i < str.length; i++){
+    if(i % n == 0){
+      newstring = newstring + str.charAt(i);
+    }
+  }
+  return newstring; 
+}
 
 
 
